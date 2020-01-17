@@ -8,7 +8,7 @@ namespace MartianWeight
     where 'Wm' is the weight on Mars, and 'We' is the weight on Earth
 
     Write a command line program which accepts a series of Earth weights from the user  
-    and displays each Earth weight as itself, and its Martian equivalent.
+    and displays each Earth weight as itself and its Martian equivalent.
 
 
     C:\Users> MartianWeight  
@@ -22,7 +22,23 @@ namespace MartianWeight
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter weights separated by spaces");
+            string strEarthWeight = Console.ReadLine();
+            string[] weights = strEarthWeight.Split(" ");
+           
+            //double[]weightsArray = new double[weights.Length];
+            for (int i = 0; i < weights.Length; i++)
+            {
+               double earthWeightInd = double.Parse(weights[i]);
+                Console.WriteLine("Earth weight is " + earthWeightInd + "; " + "Mars weight is " + Math.Floor(earthWeightInd * 0.378));
+            }
+
+           
+                
+                
+                //earthWeights * 0.378;
+
+
         }
     }
 }
