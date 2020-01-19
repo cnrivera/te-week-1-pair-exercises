@@ -26,7 +26,7 @@ namespace MartianWeight
             string strEarthWeight = Console.ReadLine();
             string[] weights = strEarthWeight.Split(" ");
            
-            //double[]weightsArray = new double[weights.Length];
+            
             for (int i = 0; i < weights.Length; i++)
             {
                double earthWeightInd = double.Parse(weights[i]);
@@ -36,7 +36,7 @@ namespace MartianWeight
            
                 
                 
-                //earthWeights * 0.378;
+               
 
 
         }
